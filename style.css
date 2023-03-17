@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*::selection {
+    background: #000;
+    text-shadow: none;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    background: transparent;
+    letter-spacing: 2px;
+}
+
+.container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #fff;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+.wrppr {
+    margin: 10px 30px;
+}
+
+.navbar.wrppr {
+    width: 100%;
+    height: auto;
+    max-height: 110px;
+    margin: 0;
+    padding: 30px 30px 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar .logo.cont {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.logo svg {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+
+.mobile-nav.cont {
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+    position: relative;
+}
+
+.mobile-nav-toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-nav-toggle.open {
+    width: 100%;
+    height: 100%;
+    gap: 7px;
+    padding-top: 6px;
+    /* display: none; */
+    position: absolute;
+    border: 1px solid #ccc;
+}
+
+.mobile-nav-toggle.close {
+    display: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.mobile-nav-toggle.close span {
+    transform: rotate(45deg);
+    display: none;
+}
+
+.mobile-nav-toggle.close span.first {
+    transform: rotate(-45deg);
+}
+
+.mobile-nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.nav-menu.wrppr {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    background: #fff;
+}
+
+.menu.cont {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-block {
+    /* position: absolute; */
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+.menu-block a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #000;
+    transform-origin: center;
+}
+
+.menu-block.secc1 a {
+    background: #fff;
+}
+
+.menu-block.secc1 a span {
+    transform-origin: center;
+    transform: rotate(-45deg);
+}
+
+.menu-block.secc2 a {
+    background: #5ea3ec;
+}
+
+.menu-block.secc2 a span {
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+.menu-block.secc3 a {
+    background: #f64444;
+}
+
+.menu-block.secc3 a span {
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+.menu-block.secc4 a {
+    background: #ffb400;
+}
+
+.menu-block.secc4 a span {
+    transform-origin: center;
+    transform: rotate(-45deg);
+}
+
+.footer.cont {
+    padding: 30px;
+    background: #fff;
+}
+
+.footer .footer-btn {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    border: solid 1px #000;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer .txt-cont p {
+    font-size: 16px;
+    line-height: 21px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.footer .txt-cont a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.footer .btn-wrppr {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.footer .btn-cont {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #000;
+    border-radius: 3px;
+}
